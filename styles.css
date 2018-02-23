@@ -1,0 +1,31 @@
+body {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Styling the horizontal line below the header*/
+
+.line {
+	border-top: 5px solid #7d97ad;
+}
+
+/*Adding size and placement of the Udacity logo*/
+.logo {
+	width: 50px;
+	height: 50px;
+}
+
+/*Placement and style of the header text*/
+
+.introduction {
+	float: right;
+	text-align: right;
+	clear:right;
+	margin-bottom: 0;
+	color: #2d3c49;
+}
+
+.top-section {
+	height: 100px;
+}
