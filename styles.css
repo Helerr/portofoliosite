@@ -68,9 +68,9 @@ body {
 
 /*Featured pictures alignment*/
 .row {
-/*   Prevent vertical gaps 
-     line-height: 0;*/
-     
+/*   Prevent vertical gaps */
+  line-height: 0;
+
   -webkit-column-count: 3;
   -webkit-column-gap:   10%;
   -moz-column-count:    3;
@@ -83,4 +83,18 @@ body {
 	  /* Just in case there are inline attributes */
   width: 100% !important;
   height: auto !important;
+}
+
+.project_name {
+	font-size: 3em;
+	color: #2d3c49;
+	text-align: center;
+	font-weight: 500;
+}
+
+.column p {
+	text-align: center;
+	color: #2d3c49;
+	font-weight: 500;
+	font-size: 0.9em;
 }
