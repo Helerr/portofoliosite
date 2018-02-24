@@ -50,7 +50,7 @@ body {
 
 /*Header hight*/
 .top-section {
-	height: 100px;
+	/*height: 100px;*/
 }
 
 /*Styling the cover picture*/
@@ -64,4 +64,25 @@ body {
 	color: #7d97ad;
 	font-weight: 500;
 	font-size: 2.5em;
+}
+
+/*Featured pictures alignment*/
+.container {
+	max-width: 100%;
+}
+.row {
+  /* Prevent vertical gaps */
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   20px;
+  -moz-column-count:    3;
+  -moz-column-gap:      20px;
+  column-count:         3;
+  column-gap:           20px;  
+}
+
+.column img {
+	  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
 }
