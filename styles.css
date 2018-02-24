@@ -33,3 +33,9 @@ body {
 .top-section {
 	height: 100px;
 }
+
+/*Styling the cover picture*/
+
+.cover {
+	max-width: 100%;
+}
