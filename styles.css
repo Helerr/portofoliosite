@@ -1,3 +1,10 @@
+/*Applying fonts to the web page*/
+
+* {
+	font-family: 'Source Sans Pro', 'Arial', 'sans-serif', 'serif';
+	font-size: 16px;
+}
+
 /*body styiling*/
 body {
 	width: 60%;
@@ -9,14 +16,15 @@ body {
 
 .line {
 	border-top: 5px solid #7d97ad;
+	margin-bottom: 20px;
 }
 
 /*Adding size and placement of the Udacity logo*/
 .logo {
-	width: 50px;
-	height: 50px;
-	margin-top: auto;
-	margin-bottom: auto;
+	width: 70px;
+	height: 70px;
+	padding-top: auto;
+	padding-bottom: auto;
 }
 
 /*Placement and style of the header text*/
@@ -26,7 +34,18 @@ body {
 	text-align: right;
 	clear: right;
 	margin-bottom: 0;
+	margin-top: 0;
 	color: #2d3c49;
+}
+
+.top-section h1 {
+	font-weight: 300;
+	font-size: 3em;
+}
+
+.top-section h5 {
+	font-size: 1.2em;
+	font-weight: 500;
 }
 
 /*Header hight*/
@@ -38,4 +57,11 @@ body {
 
 .cover {
 	max-width: 100%;
+	height: auto;
+}
+
+.featured_work {
+	color: #7d97ad;
+	font-weight: 500;
+	font-size: 2.5em;
 }
