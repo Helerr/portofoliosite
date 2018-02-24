@@ -67,18 +67,16 @@ body {
 }
 
 /*Featured pictures alignment*/
-.container {
-	max-width: 100%;
-}
 .row {
-  /* Prevent vertical gaps */
-   
+/*   Prevent vertical gaps 
+     line-height: 0;*/
+     
   -webkit-column-count: 3;
-  -webkit-column-gap:   20px;
+  -webkit-column-gap:   10%;
   -moz-column-count:    3;
-  -moz-column-gap:      20px;
+  -moz-column-gap:      10%;
   column-count:         3;
-  column-gap:           20px;  
+  column-gap:           10%;  
 }
 
 .column img {
