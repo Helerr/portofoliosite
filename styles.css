@@ -1,32 +1,16 @@
-/*Applying fonts to the web page*/
-
+/*Applying fonts and the standard text size to the web page*/
 * {
 	font-family: 'Source Sans Pro', 'Arial', 'sans-serif', 'serif';
 	font-size: 16px;
 }
 
-/*body styiling*/
-body {
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 /*Styling the horizontal line below the header*/
-
 .line {
 	border-top: 5px solid #7d97ad;
 	margin-bottom: 20px;
 }
 
-/*Adding size and placement of the Udacity logo*/
-.logo {
-	width: 70px;
-	height: 70px;
-}
-
 /*Placement and style of the header text*/
-
 .introduction {
 	float: right;
 	text-align: right;
@@ -36,30 +20,30 @@ body {
 	color: #2d3c49;
 }
 
+/*Styling the text size and weight for the introduction in the header*/
 .top-section h1 {
 	font-weight: 300;
 	font-size: 3em;
 }
-
 .top-section h5 {
 	font-size: 1.2em;
 	font-weight: 500;
 }
 
-/*Styling the cover picture*/
-
+/*dimensions the cover picture*/
 .cover {
 	max-width: 100%;
 	height: auto;
 }
 
+/*Styling and font size of the "Featured Work"*/
 .featured_work {
 	color: #7d97ad;
 	font-weight: 500;
 	font-size: 2.5em;
 }
 
-/*Featured pictures alignment*/
+/*Setting the number of columns for computer view of the featured projects*/
 .row {
 	/*   Prevent vertical gaps */
 	line-height: 0;
@@ -72,13 +56,14 @@ body {
 	column-gap: 30px;  
 }
 
+/*setting the width and height of the images*/
 .column img {
 	/* Just in case there are inline attributes */
 	width: 100% !important;
 	height: auto !important;
-	max-height: 200px;
 }
 
+/*Styling the name of the projects*/
 .project_name {
 	font-size: 3em;
 	color: #2d3c49;
@@ -86,6 +71,7 @@ body {
 	font-weight: 500;
 }
 
+/*Styling the url of the projects in featured work*/
 .column p {
 	text-align: center;
 	color: #2d3c49;
@@ -93,63 +79,121 @@ body {
 	font-size: 0.9em;
 }
 
+/*Settings for the mobile view*/
 @media screen and (max-width: 499px) {
+	/*setting the text size for the introduction in the header*/
 	.top-section h1 {
 		font-size: 1.5em;
 	}
 	.top-section h5 {
 		font-size: 1em;
 	}
+
+	/*width and margins of the body*/
 	body {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	/*logo size*/
 	.logo {
 		height: 40px;
 		width: 40px;
 	}
+
+	/*Font size of featured work*/
 	.featured_work {
 		font-size: 1.2em;
 	}
+
+	/*making the projects display on rows instead of columns*/
 	.row {
 		column-count: 1;
 		column-gap: 30px;  
 	}
+
+	/*text size for project names in featured work*/
 	.column h1 {
 		font-size: 1.2em;
 		padding: 10px 10px;
 	}
+
+	/*styling the horizontal line in mobile view*/
+	.line {
+		border-top: 3px solid #7d97ad;
+		margin-bottom: 10px;
+	}
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
+/*Setting for tablet mode view*/
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+
+	/*setting the font size for the introduction in the header*/
 	.top-section h1 {
 		font-size: 2.3em;
 	}
 	.top-section h5 {
 		font-size: 1.5em;
 	}
+
+	/*setting the width of the body and the margins*/
 	body {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	/*width and height of logo*/
 	.logo {
 		height: 50px;
 		width: 50px;
 	}
+
+	/*setting the size of "featured work"*/
 	.featured_work {
 		font-size: 2em;
 	}
+
+	/*setting the number of columns and the space between elements*/
 	.row {
 		column-count: 2;
 		column-gap: 30px;  
 	}
+
+	/*setting font size for the name of the featured projects*/
 	.column h1 {
 		font-size: 1.2em;
-		clear: right;
 	}
-	.column img {
-		padding-bottom: 10px;
+
+	/*Setting the max width of the body*/
+	body {
+		max-width: 800px;
+	}
+}
+
+/*Settings for the computer view*/
+@media screen and (min-width: 801px) {
+
+	/*body styiling*/
+	body {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		min-width: 800px;
+		max-width: 1000px;
+	}
+
+	/*Adding size and placement of the Udacity logo*/
+	.logo {
+		width: 70px;
+		height: 70px;
+	}
+	
+	/*text size and padding for the projects name in featured work*/
+	.column h1 {
+		font-size: 1.8em;
+		padding: 10px 0 10px 0;
 	}
 }
