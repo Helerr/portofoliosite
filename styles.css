@@ -20,15 +20,6 @@ body {
 	color: #2d3c49;
 }
 
-#name {
-	font-size: 3em;
-	font-weight: 300;
-}
-
-#ocupation {
-	font-size: 1.2em;
-	font-weight: 500;
-}
 /*dimensions the cover picture*/
 .cover {
 	width: 100%;
@@ -36,30 +27,22 @@ body {
 	padding: auto;
 }
 
-/*Styling and font size of the "Featured Work"*/
+/*Styling the color and weight "Featured Work"*/
 .featured-work {
 	color: #7d97ad;
 	font-weight: 400;
-	font-size: 2.5em;
 }
 
-/*Styling the name of the projects*/
+/*Styling the color, alignment and weight of the projects name*/
 .project-name {
-	font-size: 2.6em;
 	color: #2d3c49;
 	text-align: center;
 	font-weight: 500;
 }
 
+/*Centering the url text of the projects*/
 .project-url {
 	text-align: center;
-}
-
-/*Logo size*/
-
-.logo {
-	max-width: 70px;
-	max-width: 70px;
 }
 
 .header {
@@ -77,20 +60,70 @@ body {
 	border-radius:0;
 }
 
+@media screen and (max-width: 360px) {
+	.logo {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 499px) {
 	#name {
 		font-size: 2em;
-		font-weight: 300;
+		font-weight: 200;
 	}
-
 	#ocupation {
-		font-size: 1.1em;
-		font-weight: 500;
+		font-size: 1em;
+		font-weight: 400;
 	}
 	.featured-work {
-		font-size: 1.7em;
+		font-size: 1.8em;
+	}
+	.project-name {
+		font-size: 1.4em;
+	}
+	.logo {
+		max-width: 50px;
+		max-height: 50px;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+	#name {
+		font-size: 2.3em;
+		font-weight: 200;
+	}
+	#ocupation {
+		font-size: 1.1em;
+		font-weight: 400;
+	}
+	.featured-work {
+		font-size: 2em;
 	}
 	.project-name {
 		font-size: 1.5em;
+	}
+	.logo {
+		max-width: 50px;
+		max-height: 50px;
+	}
+}
+@media screen and (min-width: 1000px){
+	#name {
+		font-size: 3em;
+		font-weight: 200;
+	}
+	#ocupation {
+		font-size: 1.2em;
+		font-weight: 400;
+	}
+	.featured-work {
+		font-size: 2.3em;
+	}	
+	.project-name {
+		font-size: 2.4em;
+	}
+	.logo {
+		max-width: 70px;
+		max-height: 70px;
 	}
 }
