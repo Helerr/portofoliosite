@@ -58,8 +58,8 @@ body {
 /*Logo size*/
 
 .logo {
-	width: 70px;
-	height: 70px;
+	max-width: 70px;
+	max-width: 70px;
 }
 
 .header {
@@ -75,4 +75,22 @@ body {
 	border:0;
 	box-shadow:0;
 	border-radius:0;
+}
+
+@media screen and (max-width: 499px) {
+	#name {
+		font-size: 2em;
+		font-weight: 300;
+	}
+
+	#ocupation {
+		font-size: 1.1em;
+		font-weight: 500;
+	}
+	.featured-work {
+		font-size: 1.7em;
+	}
+	.project-name {
+		font-size: 1.5em;
+	}
 }
