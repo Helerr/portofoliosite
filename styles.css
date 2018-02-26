@@ -1,5 +1,5 @@
 /*Applying fonts and the standard text size to the web page*/
-* {
+body {
 	font-family: 'Source Sans Pro', 'Arial', 'sans-serif', 'serif';
 	font-size: 16px;
 }
@@ -7,7 +7,6 @@
 /*Styling the horizontal line below the header*/
 .line {
 	border-top: 5px solid #7d97ad;
-	margin-bottom: 20px;
 }
 
 /*Placement and style of the header text*/
@@ -15,25 +14,24 @@
 	float: right;
 	text-align: right;
 	clear: right;
-	margin-bottom: 0;
-	margin-top: 0;
+	margin: 0;
 	color: #2d3c49;
 }
 
-/*Styling the text size and weight for the introduction in the header*/
-.top-section h1 {
-	font-weight: 300;
+#name {
 	font-size: 3em;
+	font-weight: 200;
 }
-.top-section h5 {
+
+#ocupation {
 	font-size: 1.2em;
 	font-weight: 500;
 }
-
 /*dimensions the cover picture*/
 .cover {
 	max-width: 100%;
 	height: auto;
+	padding: auto 0;
 }
 
 /*Styling and font size of the "Featured Work"*/
@@ -43,32 +41,16 @@
 	font-size: 2.5em;
 }
 
-/*Setting the number of columns for computer view of the featured projects*/
-.row {
-	/*   Prevent vertical gaps */
-	line-height: 0;
-
-	-webkit-column-count: 3;
-	-webkit-column-gap: 10%;
-	-moz-column-count: 3;
-	-moz-column-gap: 10%;
-	column-count: 3;
-	column-gap: 30px;  
-}
-
-/*setting the width and height of the images*/
-.column img {
-	/* Just in case there are inline attributes */
-	width: 100% !important;
-	height: auto !important;
-}
-
 /*Styling the name of the projects*/
 .project-name {
-	font-size: 3em;
+	font-size: 2.6em;
 	color: #2d3c49;
 	text-align: center;
 	font-weight: 500;
+}
+
+.project-url {
+	text-align: center;
 }
 
 /*Styling the url of the projects in featured work*/
@@ -76,124 +58,27 @@
 	text-align: center;
 	color: #2d3c49;
 	font-weight: 500;
-	font-size: 0.9em;
+	font-size: 1.1em;
 }
 
-/*Settings for the mobile view*/
-@media screen and (max-width: 499px) {
-	/*setting the text size for the introduction in the header*/
-	.top-section h1 {
-		font-size: 1.5em;
-	}
-	.top-section h5 {
-		font-size: 1em;
-	}
+/*Logo size*/
 
-	/*width and margins of the body*/
-	body {
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	/*logo size*/
-	.logo {
-		height: 40px;
-		width: 40px;
-	}
-
-	/*Font size of featured work*/
-	.featured-work {
-		font-size: 1.2em;
-	}
-
-	/*making the projects display on rows instead of columns*/
-	.row {
-		column-count: 1;
-		column-gap: 30px;  
-	}
-
-	/*text size for project names in featured work*/
-	.column h1 {
-		font-size: 1.2em;
-		padding: 10px 10px;
-	}
-
-	/*styling the horizontal line in mobile view*/
-	.line {
-		border-top: 3px solid #7d97ad;
-		margin-bottom: 10px;
-	}
+.logo {
+	width: 70px;
+	height: 70px;
 }
 
-/*Setting for tablet mode view*/
-
-@media screen and (min-width: 500px) and (max-width: 799px) {
-
-	/*setting the font size for the introduction in the header*/
-	.top-section h1 {
-		font-size: 2.3em;
-	}
-	.top-section h5 {
-		font-size: 1.5em;
-	}
-
-	/*setting the width of the body and the margins*/
-	body {
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	/*width and height of logo*/
-	.logo {
-		height: 50px;
-		width: 50px;
-	}
-
-	/*setting the size of "featured work"*/
-	.featured-work {
-		font-size: 2em;
-	}
-
-	/*setting the number of columns and the space between elements*/
-	.row {
-		column-count: 2;
-		column-gap: 30px;  
-	}
-
-	/*setting font size for the name of the featured projects*/
-	.column h1 {
-		font-size: 1.2em;
-	}
-
-	/*Setting the max width of the body*/
-	body {
-		max-width: 800px;
-	}
+.header {
+	padding: 20px 0;
 }
 
-/*Settings for the computer view*/
-@media screen and (min-width: 801px) {
+.project-pic {
+	width:100%;
+	height: 100%;
+}
 
-	/*body styiling*/
-	body {
-		width: 60%;
-		margin-left: auto;
-		margin-right: auto;
-		min-width: 800px;
-		max-width: 1000px;
-	}
-
-	/*Adding size and placement of the Udacity logo*/
-	.logo {
-		width: 70px;
-		height: 70px;
-	}
-
-	/*text size and padding for the projects name in featured work*/
-	.column h1 {
-		font-size: 1.8em;
-		padding: 10px 0 10px 0;
-	}
+.row .thumbnail {
+    border:0;
+    box-shadow:0;
+    border-radius:0;
 }
