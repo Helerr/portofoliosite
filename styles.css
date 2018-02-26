@@ -1,7 +1,9 @@
 /*Applying fonts and the standard text size to the web page*/
 body {
-	font-family: 'Source Sans Pro', 'Arial', 'sans-serif', 'serif';
+	font-family: 'Roboto', sans-serif; 
 	font-size: 16px;
+	margin: 0;
+	padding: 0;
 }
 
 /*Styling the horizontal line below the header*/
@@ -20,7 +22,7 @@ body {
 
 #name {
 	font-size: 3em;
-	font-weight: 200;
+	font-weight: 300;
 }
 
 #ocupation {
@@ -29,15 +31,15 @@ body {
 }
 /*dimensions the cover picture*/
 .cover {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
-	padding: auto 0;
+	padding: auto;
 }
 
 /*Styling and font size of the "Featured Work"*/
 .featured-work {
 	color: #7d97ad;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 2.5em;
 }
 
@@ -53,14 +55,6 @@ body {
 	text-align: center;
 }
 
-/*Styling the url of the projects in featured work*/
-.column p {
-	text-align: center;
-	color: #2d3c49;
-	font-weight: 500;
-	font-size: 1.1em;
-}
-
 /*Logo size*/
 
 .logo {
@@ -72,13 +66,13 @@ body {
 	padding: 20px 0;
 }
 
-.project-pic {
+.project-pic, .thumbnail {
 	width:100%;
 	height: 100%;
 }
 
 .row .thumbnail {
-    border:0;
-    box-shadow:0;
-    border-radius:0;
+	border:0;
+	box-shadow:0;
+	border-radius:0;
 }
