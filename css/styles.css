@@ -1,6 +1,6 @@
 /*Applying fonts and the standard text size to the web page*/
 body {
-	font-family: 'Roboto', sans-serif; 
+	font-family: "Roboto", sans-serif; 
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
@@ -24,7 +24,6 @@ body {
 .cover {
 	width: 100%;
 	height: auto;
-	padding: auto;
 }
 
 /*Styling the color and weight "Featured Work"*/
@@ -59,25 +58,29 @@ body {
 /*removing the border around the project thumbnails*/
 .row .thumbnail {
 	border:0;
-	box-shadow:0;
 	border-radius:0;
 }
 
 @media screen and (max-width: 380px) {
+
 	#name {
 		font-size: 1.5em;
 		font-weight: 200;
 	}
+
 	#ocupation {
 		font-size: 0.9em;
 		font-weight: 400;
 	}
+
 	.featured-work {
 		font-size: 1.4em;
 	}
+
 	.project-name {
 		font-size: 1.2em;
 	}
+
 	.logo {
 		max-width: 30px;
 		max-height: 30px;
@@ -85,20 +88,25 @@ body {
 }
 
 @media screen and (min-width: 381px) and (max-width: 499px) {
+
 	#name {
 		font-size: 2em;
 		font-weight: 200;
 	}
+
 	#ocupation {
 		font-size: 1em;
 		font-weight: 400;
 	}
+
 	.featured-work {
 		font-size: 1.8em;
 	}
+
 	.project-name {
 		font-size: 1.4em;
 	}
+
 	.logo {
 		max-width: 50px;
 		max-height: 50px;
@@ -106,40 +114,50 @@ body {
 }
 
 @media screen and (min-width: 500px) and (max-width: 1000px) {
+
 	#name {
 		font-size: 2.3em;
 		font-weight: 200;
 	}
+
 	#ocupation {
 		font-size: 1.1em;
 		font-weight: 400;
 	}
+
 	.featured-work {
 		font-size: 2em;
 	}
+
 	.project-name {
 		font-size: 1.5em;
 	}
+
 	.logo {
 		max-width: 50px;
 		max-height: 50px;
 	}
 }
 @media screen and (min-width: 1000px){
+
 	#name {
 		font-size: 3em;
 		font-weight: 200;
 	}
+
 	#ocupation {
 		font-size: 1.2em;
 		font-weight: 400;
 	}
+
 	.featured-work {
 		font-size: 2.3em;
 	}	
+
 	.project-name {
 		font-size: 2.4em;
 	}
+
 	.logo {
 		max-width: 70px;
 		max-height: 70px;
